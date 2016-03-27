@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -22,12 +27,39 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-fp-ET7">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDq-BY-fII">
+                                        <rect key="frame" x="162" y="8" width="276" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="276" id="WEd-ce-tLj"/>
+                                            <constraint firstAttribute="height" constant="38" id="v6r-Br-lad"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vL-zp-9z0">
+                                        <rect key="frame" x="561" y="16" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="lyL-aw-Nqe"/>
+                                            <constraint firstAttribute="width" constant="31" id="vlJ-uD-Emz"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgE-9L-K6S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="5ZW-5N-ERr"/>
+                                    <constraint firstItem="4vL-zp-9z0" firstAttribute="top" secondItem="dKe-fp-ET7" secondAttribute="top" constant="16" id="9HA-MH-Jgn"/>
+                                    <constraint firstAttribute="trailing" secondItem="4vL-zp-9z0" secondAttribute="trailing" constant="8" id="mrU-VF-CBk"/>
+                                    <constraint firstItem="oDq-BY-fII" firstAttribute="centerY" secondItem="dKe-fp-ET7" secondAttribute="centerY" id="p7U-Jh-Pk3"/>
+                                    <constraint firstItem="oDq-BY-fII" firstAttribute="centerX" secondItem="dKe-fp-ET7" secondAttribute="centerX" id="q6N-oB-OBH"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="z2V-hJ-NYY">
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" placeholder="Search for Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="z2V-hJ-NYY">
                                 <rect key="frame" x="0.0" y="55" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -102,6 +134,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="On7-NA-zKY" id="RSQ-dn-tK7"/>
+                        <outlet property="searchBar" destination="z2V-hJ-NYY" id="oar-bx-vQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -112,5 +145,6 @@
     <resources>
         <image name="297" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music" width="100" height="100"/>
     </resources>
 </document>

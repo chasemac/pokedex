@@ -16,6 +16,8 @@
 		0EA3DF3E1CA5EC4200352E2D /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3DF3D1CA5EC4200352E2D /* Pokemon.swift */; };
 		0EA3DF401CA5F47400352E2D /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3DF3F1CA5F47400352E2D /* PokeCell.swift */; };
 		0EA3DF421CA60BB400352E2D /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3DF411CA60BB400352E2D /* csv.swift */; };
+		0EA3DF461CA6164700352E2D /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA3DF451CA6164700352E2D /* pokemon.ttf */; };
+		0EA3DF481CA7679900352E2D /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EA3DF471CA7679900352E2D /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		0EA3DF3D1CA5EC4200352E2D /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		0EA3DF3F1CA5F47400352E2D /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		0EA3DF411CA60BB400352E2D /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		0EA3DF451CA6164700352E2D /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		0EA3DF471CA7679900352E2D /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +115,9 @@
 		0EA3DF441CA60BE400352E2D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0EA3DF451CA6164700352E2D /* pokemon.ttf */,
 				0EA3DF381CA5E84100352E2D /* pokemon.csv */,
+				0EA3DF471CA7679900352E2D /* music.mp3 */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -174,7 +180,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA3DF461CA6164700352E2D /* pokemon.ttf in Resources */,
 				0E1415F41CA35CC600C45987 /* LaunchScreen.storyboard in Resources */,
+				0EA3DF481CA7679900352E2D /* music.mp3 in Resources */,
 				0E1415F11CA35CC600C45987 /* Assets.xcassets in Resources */,
 				0EA3DF391CA5E84100352E2D /* pokemon.csv in Resources */,
 				0E1415EF1CA35CC600C45987 /* Main.storyboard in Resources */,
